@@ -1,5 +1,5 @@
 {
-  "name": "bscscan",
+  "name": "@jpmonette/bscscan",
   "version": "0.1.0",
   "description": "BscScan TypeScript API",
   "homepage": "https://github.com/jpmonette/bscscan-ts",
