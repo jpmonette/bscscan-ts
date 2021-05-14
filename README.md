@@ -38,6 +38,34 @@ const client = new BscScan({ apikey: "api-key" });
 const txlist = await client.accounts.getTxList({ address: "0x4e656459ed25bf986eea1196bc1b00665401645d" });
 
 console.log(txlist);
+// {
+//   status: '1',
+//   message: 'OK',
+//   result: [
+//     {
+//       blockNumber: '3385',
+//       blockHash: '0x51bdc4233991acedb25a895c8659f6fb7607dc40626a1dcb795e57ed7ed1a673',
+//       timeStamp: '1598681758',
+//       hash: '0x30885770a108af3fd8e9b8c2d5d104dd067ab0a333379a4cdd1991cb80d23a28',
+//       nonce: '0',
+//       transactionIndex: '0',
+//       from: '0x4e656459ed25bf986eea1196bc1b00665401645d',
+//       to: '0x0000000000000000000000000000000000001004',
+//       value: '3000000000000000',
+//       gas: '125587',
+//       gasPrice: '30000000000',
+//       input: '',
+//       contractAddress: '',
+//       cumulativeGasUsed: '110587',
+//       txreceipt_status: '1',
+//       gasUsed: '110587',
+//       confirmations: '7405141',
+//       isError: '0'
+//     },
+//     {
+//       ...
+//     }
+// }
 ```
 
 ## License
