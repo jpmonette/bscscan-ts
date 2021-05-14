@@ -5,8 +5,8 @@
   "homepage": "https://github.com/jpmonette/bscscan-ts",
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
   "license": "MIT",
-  "main": "dist/client.js",
-  "types": "dist/client.d.ts",
+  "main": "lib/client.js",
+  "types": "lib/client.d.ts",
   "bugs": {
     "url": "https://github.com/jpmonette/bscscan-ts/issues"
   },
@@ -16,8 +16,8 @@
   },
   "scripts": {
     "build": "rimraf lib/ && mkdir lib && tsc",
-    "test": "export NODE_ENV=test && npx jest --silent",
-    "test-travis": "export NODE_ENV=test && npx jest --coverage"
+    "test": "export NODE_ENV=test && npx jest --silent --passWithNoTests",
+    "test-travis": "yarn test"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
