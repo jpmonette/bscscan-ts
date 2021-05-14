@@ -12,6 +12,8 @@ import {
   GetTxListInternalResponse,
   GetTxListRequest,
   GetTxListResponse,
+  GetMinedBlocksRequest,
+  GetMinedBlocksResponse,
 } from "../typings/accounts";
 
 class Accounts {
@@ -42,6 +44,10 @@ class Accounts {
   }
 
   async getTokenNFTTx(opts: GetTokenNFTTxRequest): Promise<GetTokenNFTTxResponse> {
+    return this.do("tokennfttx", opts);
+  }
+
+  async getMinedBlocks(opts: GetMinedBlocksRequest): Promise<GetMinedBlocksResponse> {
     return this.do("getminedblocks", opts);
   }
 

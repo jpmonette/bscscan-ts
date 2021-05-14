@@ -11,3 +11,27 @@ export type APIResponse<T> = {
   message: string;
   result: T;
 };
+
+export type Token = {
+  blockHash: string;
+  blockNumber: string;
+  confirmations: string;
+  contractAddress: string;
+  cumulativeGasUsed: string;
+  from: string;
+  gas: string;
+  gasPrice: string;
+  gasUsed: string;
+  hash: string;
+  input: string;
+  nonce: string;
+  timeStamp: string;
+  to: string;
+  tokenDecimal: string;
+  tokenName: string;
+  tokenSymbol: string;
+  transactionIndex: string;
+};
+
+export type BEP20 = Token & { value: string };
+export type ERC721 = Token & { tokenID: string };

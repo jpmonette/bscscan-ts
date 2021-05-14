@@ -46,7 +46,7 @@ class BscScan {
     return this.do(request);
   }
 
-  private async do<T>(request: Request): Promise<APIResponse<T>> {
+  private async do<T>(request: Request): Promise<T> {
     const response: Response = await fetch(request);
     const responseBody: APIResponse<T> = await response.json();
 
@@ -54,7 +54,7 @@ class BscScan {
       throw new Error(responseBody.message + " - " + responseBody.result);
     }
 
-    return responseBody;
+    return responseBody.result;
   }
 }
 
