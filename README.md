@@ -3,7 +3,7 @@
 <p align="center"><code>jpmonette/bscscan-ts</code> - The <strong>BscScan TypeScript API</strong> - explore the <strong>Binance Smart Chain</strong></p>
 
 <p align="center">
-  <a href="https://travis-ci.org/jpmonette/bscscan-ts"><img src="https://travis-ci.org/jpmonette/bscscan-ts.svg?branch=develop" alt="Build Status"></a> <a href='https://coveralls.io/github/jpmonette/bscscan-ts?branch=develop'><img src='https://coveralls.io/repos/github/jpmonette/bscscan-ts/badge.svg?branch=develop' alt='Coverage Status' /></a> <a href="https://badge.fury.io/js/bscscan-ts"><img src="https://badge.fury.io/js/bscscan-ts.svg" alt="npm version" height="18"></a> <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://travis-ci.com/jpmonette/bscscan-ts"><img src="https://travis-ci.com/jpmonette/bscscan-ts.svg?branch=develop" alt="Build Status"></a> <a href='https://coveralls.io/github/jpmonette/bscscan-ts?branch=develop'><img src='https://coveralls.io/repos/github/jpmonette/bscscan-ts/badge.svg?branch=develop' alt='Coverage Status' /></a> <a href="https://badge.fury.io/js/bscscan-ts"><img src="https://badge.fury.io/js/bscscan-ts.svg" alt="npm version" height="18"></a> <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
 ---

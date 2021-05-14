@@ -9,5 +9,5 @@ before_install:
 script:
   - "npm run-script test-travis"
 after_script:
-  - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  - "cat ./coverage/lcov.info | npx coveralls"
   - "codeclimate-test-reporter < ./coverage/lcov.info"
