@@ -15,7 +15,7 @@ Array [
 ]
 `;
 
-exports[`account should getMinedBlocks 1`] = `
+exports[`account should getMinedBlocks - blocks found 1`] = `
 Array [
   Object {
     "blockNumber": "12837584",
@@ -39,6 +39,10 @@ Array [
   },
 ]
 `;
+
+exports[`account should getMinedBlocks - error 1`] = `[Error: API Key Not Found - ]`;
+
+exports[`account should getMinedBlocks - no block 1`] = `Array []`;
 
 exports[`account should getTokenNFTTx 1`] = `
 Array [

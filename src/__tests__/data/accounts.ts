@@ -1,5 +1,9 @@
-export const accountResponses: Record<string, unknown> = {
-  balance: { status: "1", message: "OK", result: "1921440981086393507806711" },
+export const accountResponses: Record<string, any> = {
+  balance: {
+    status: "1",
+    message: "OK",
+    result: "1921440981086393507806711",
+  },
   balancemulti: {
     status: "1",
     message: "OK",
@@ -152,13 +156,25 @@ export const accountResponses: Record<string, unknown> = {
     ],
   },
   getminedblocks: {
-    status: "1",
-    message: "OK",
-    result: [
-      { blockNumber: "12837584", timeStamp: "1637509278", blockReward: "647708965667033920" },
-      { blockNumber: "12837563", timeStamp: "1637509215", blockReward: "507184284612347890" },
-      { blockNumber: "12837542", timeStamp: "1637509152", blockReward: "565437075463792362" },
-      { blockNumber: "12837521", timeStamp: "1637509089", blockReward: "0" },
-    ],
+    success: {
+      status: "1",
+      message: "OK",
+      result: [
+        { blockNumber: "12837584", timeStamp: "1637509278", blockReward: "647708965667033920" },
+        { blockNumber: "12837563", timeStamp: "1637509215", blockReward: "507184284612347890" },
+        { blockNumber: "12837542", timeStamp: "1637509152", blockReward: "565437075463792362" },
+        { blockNumber: "12837521", timeStamp: "1637509089", blockReward: "0" },
+      ],
+    },
+    noBlock: {
+      status: "0",
+      message: "No transactions found",
+      result: [],
+    },
+    error: {
+      status: "0",
+      message: "API Key Not Found",
+      result: [],
+    },
   },
 };
