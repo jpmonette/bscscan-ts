@@ -1,6 +1,6 @@
 <h1 align="center"><code>@jpmonette/bscscan</code></h1>
 
-<p align="center"><code>@jpmonette/bscscan</code> - The <strong>BscScan TypeScript API</strong> - explore the <strong>Binance Smart Chain</strong></p>
+<p align="center"><code>@jpmonette/bscscan</code> - Explore the <strong>Binance Smart Chain</strong> using TypeScript and JavaScript</p>
 
 <p align="center">
   <a href="https://travis-ci.com/jpmonette/bscscan-ts"><img src="https://travis-ci.com/jpmonette/bscscan-ts.svg?branch=develop" alt="Build Status"></a> <a href='https://coveralls.io/github/jpmonette/bscscan-ts?branch=develop'><img src='https://coveralls.io/repos/github/jpmonette/bscscan-ts/badge.svg?branch=develop' alt='Coverage Status' /></a> <a href="https://www.npmjs.com/package/@jpmonette/bscscan"><img src="https://badge.fury.io/js/%40jpmonette%2Fbscscan.svg" alt="npm version" height="18"></a> <a href="https://github.com/facebook/jest"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
@@ -10,9 +10,9 @@
 
 **👩🏻‍💻 Developer Ready**: Interact with the BscScan API in no time!
 
-**💪🏼 Strongly Typed**: Developed using TypeScript / type-safe.
+**💪🏼 Strongly Typed**: Developed using TypeScript.
 
-**🔒 Battleproof**: Tests & snapshot for each syndication format to avoid regressions.
+**🔒 Battleproof**: Tested using Jest.
 
 # Getting Started
 
@@ -70,10 +70,10 @@ console.log(txlist);
 
 ## License
 
-Copyright (C) 2013, Jean-Philippe Monette <contact@jpmonette.net>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+> Copyright (C) 2021, Jean-Philippe Monette <contact@jpmonette.net>
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
