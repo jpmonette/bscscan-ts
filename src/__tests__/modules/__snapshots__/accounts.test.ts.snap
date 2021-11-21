@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`account should getBalance 1`] = `"1921440981086393507806711"`;
+
+exports[`account should getBalanceMulti 1`] = `
+Array [
+  Object {
+    "account": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "balance": "1921270037723443507806711",
+  },
+  Object {
+    "account": "0x161ba15a5f335c9f06bb5bbb0a9ce14076fbb645",
+    "balance": "1627060201835648279950872",
+  },
+]
+`;
+
+exports[`account should getMinedBlocks 1`] = `
+Array [
+  Object {
+    "blockNumber": "12837584",
+    "blockReward": "647708965667033920",
+    "timeStamp": "1637509278",
+  },
+  Object {
+    "blockNumber": "12837563",
+    "blockReward": "507184284612347890",
+    "timeStamp": "1637509215",
+  },
+  Object {
+    "blockNumber": "12837542",
+    "blockReward": "565437075463792362",
+    "timeStamp": "1637509152",
+  },
+  Object {
+    "blockNumber": "12837521",
+    "blockReward": "0",
+    "timeStamp": "1637509089",
+  },
+]
+`;
+
+exports[`account should getTokenNFTTx 1`] = `
+Array [
+  Object {
+    "blockHash": "0xdf0e6157fab1d82b530f487f857d902209074ee816324e802952d256ad00cb6f",
+    "blockNumber": "11998587",
+    "confirmations": "838914",
+    "contractAddress": "0xc0bfe67cedc9fe042f335258eb75b9e1baaf1a5d",
+    "cumulativeGasUsed": "50420346",
+    "from": "0xc0ecdbffbe14e69438ef0f06c16842c88573f564",
+    "gas": "111424",
+    "gasPrice": "5000000000",
+    "gasUsed": "81424",
+    "hash": "0x50a2e22db4df52d73f2743f06152be86fb3b600646f72e9e7e7abd415531f419",
+    "input": "deprecated",
+    "nonce": "379",
+    "timeStamp": "1634923334",
+    "to": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "tokenDecimal": "0",
+    "tokenID": "260",
+    "tokenName": "TTK Hero",
+    "tokenSymbol": "TTKHero",
+    "transactionIndex": "336",
+  },
+]
+`;
+
+exports[`account should getTokenTx 1`] = `
+Array [
+  Object {
+    "blockHash": "0x868ceda2b8063d0f40056446ff5fab3cba494b3a3752bf7cd6297297cf0b0740",
+    "blockNumber": "8527363",
+    "confirmations": "4309633",
+    "contractAddress": "0xc1ed07a64f69ba3658e227a76d962218519c147a",
+    "cumulativeGasUsed": "16012394",
+    "from": "0xd152f549545093347a162dce210e7293f1452150",
+    "gas": "8129776",
+    "gasPrice": "5000000000",
+    "gasUsed": "8125393",
+    "hash": "0xe41ccda7b52e8720ea5663bfc19e1c6d912b2c67ecd0be29294cce01d5ef2bdd",
+    "input": "deprecated",
+    "nonce": "112",
+    "timeStamp": "1624391825",
+    "to": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "tokenDecimal": "18",
+    "tokenName": "OVRswap.com",
+    "tokenSymbol": "OVR",
+    "transactionIndex": "57",
+    "value": "1989000000000000000000",
+  },
+  Object {
+    "blockHash": "0xa653a8587e05b4faeca01da1430a141dd74e58444ba94205298d95b35754277e",
+    "blockNumber": "8534601",
+    "confirmations": "4302395",
+    "contractAddress": "0x1deb61e41f337b04660eab59a34ad5e39afe9348",
+    "cumulativeGasUsed": "6707064",
+    "from": "0x9ed60f5a914ef064e7abf0643b1b47b3e8b568e8",
+    "gas": "51189",
+    "gasPrice": "5000000000",
+    "gasUsed": "51189",
+    "hash": "0x5fe7553d393baec7876792abba532f3b97d60d841cb15674d5b55cece7d03242",
+    "input": "deprecated",
+    "nonce": "36",
+    "timeStamp": "1624413715",
+    "to": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "tokenDecimal": "18",
+    "tokenName": "EAO",
+    "tokenSymbol": "EAO",
+    "transactionIndex": "49",
+    "value": "160000000000000000000",
+  },
+]
+`;
+
+exports[`account should getTxList 1`] = `
+Array [
+  Object {
+    "blockHash": "0xfb8a6a69ddc2e72aae9be480d3162f041578fee6cdbfc0e175cb3d5422df9b6e",
+    "blockNumber": "8200395",
+    "confirmations": "4637006",
+    "contractAddress": "",
+    "cumulativeGasUsed": "2452470",
+    "from": "0x8894e0a0c962cb723c1976a4421c95949be2d4e3",
+    "gas": "21000",
+    "gasPrice": "10000000000",
+    "gasUsed": "21000",
+    "hash": "0xe9a602f83a4e9592cd3b08ff0ec99b65842b66acf71325b163f802d764915679",
+    "input": "0x",
+    "isError": "0",
+    "nonce": "17",
+    "timeStamp": "1623403230",
+    "to": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "transactionIndex": "11",
+    "txreceipt_status": "1",
+    "value": "1000000000000000000000",
+  },
+  Object {
+    "blockHash": "0x8f350abfaf636fd998ba054c7edf9d351b01e317592403185ee26901db555dd3",
+    "blockNumber": "8400190",
+    "confirmations": "4437211",
+    "contractAddress": "",
+    "cumulativeGasUsed": "3390501",
+    "from": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "gas": "21000",
+    "gasPrice": "10000000000",
+    "gasUsed": "21000",
+    "hash": "0x96f03c131e7a4e159a83131afbfe5f985be105a6593a144e2034d8ffde2c6dcf",
+    "input": "0x",
+    "isError": "0",
+    "nonce": "0",
+    "timeStamp": "1624008263",
+    "to": "0xb2923dc4096e1ec1401ff4febd99c2f6b5315bf4",
+    "transactionIndex": "13",
+    "txreceipt_status": "1",
+    "value": "1411454740000000000",
+  },
+]
+`;
+
+exports[`account should getTxListInternal 1`] = `
+Array [
+  Object {
+    "blockNumber": "10628250",
+    "contractAddress": "",
+    "errCode": "",
+    "from": "0xf392c128acbfd7966f1cf08deb11a79cf12b3883",
+    "gas": "0",
+    "gasUsed": "0",
+    "hash": "0xc6963be01d4e718ccb57fac77eeb9470079f68c8ded39d691c8628e46b48f22d",
+    "input": "",
+    "isError": "0",
+    "timeStamp": "1630779994",
+    "to": "0x515b72ed8a97f42c568d6a143232775018f133c8",
+    "traceId": "0_1",
+    "type": "call",
+    "value": "112310000000000",
+  },
+]
+`;

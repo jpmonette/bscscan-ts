@@ -6,7 +6,7 @@
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
   "license": "MIT",
   "main": "lib/client.js",
-  "types": "lib/client.d.ts",
+  "types": "lib/typings/index.d.ts",
   "bugs": {
     "url": "https://github.com/jpmonette/bscscan-ts/issues"
   },
@@ -28,6 +28,7 @@
     "eslint": "^7.26.0",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^26.6.3",
+    "msw": "^0.35.0",
     "prettier": "^2.3.0",
     "ts-jest": "^26.5.6",
     "ts-node": "^9.1.1",

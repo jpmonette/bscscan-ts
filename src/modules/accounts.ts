@@ -48,7 +48,15 @@ class Accounts {
   }
 
   async getMinedBlocks(opts: GetMinedBlocksRequest): Promise<GetMinedBlocksResponse> {
-    return this.do("getminedblocks", opts);
+    try {
+      const response = await this.do("getminedblocks", opts);
+      return response;
+    } catch (e) {
+      if (e.message.includes("No transactions found")) {
+        return [];
+      }
+      throw e;
+    }
   }
 
   async do(action: string, opts: Record<string, any>): Promise<any> {
