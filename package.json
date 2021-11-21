@@ -1,6 +1,6 @@
 {
   "name": "@jpmonette/bscscan",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "BscScan TypeScript API",
   "homepage": "https://github.com/jpmonette/bscscan-ts",
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
