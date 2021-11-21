@@ -8,3 +8,5 @@ before_install:
   - export TZ=Europe/London
 script:
   - yarn test-travis
+after_script:
+  - coveralls < coverage/lcov.info
