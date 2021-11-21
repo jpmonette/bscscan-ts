@@ -24,6 +24,7 @@ class Contracts {
 
   /**
    * Creates an instance of Contracts.
+   *
    * @param {BscScan} client
    * @memberof Contracts
    */
@@ -34,6 +35,7 @@ class Contracts {
   /**
    * Get Contract ABI for Verified Contract Source Codes
    * https://docs.bscscan.com/api-endpoints/contracts#get-contract-abi-for-verified-contract-source-codes
+   *
    * @param {GetAbiRequest} opts
    * @returns {Promise<GetAbiResponse>}
    * @memberof Contracts
@@ -45,6 +47,7 @@ class Contracts {
   /**
    * Get Contract Source Code for Verified Contract Source Codes
    * https://docs.bscscan.com/api-endpoints/contracts#get-contract-source-code-for-verified-contract-source-codes
+   *
    * @param {GetSourceCodeRequest} opts
    * @returns {Promise<GetSourceCodeResponse>}
    * @memberof Contracts
@@ -56,6 +59,7 @@ class Contracts {
   /**
    * Verify Source Code
    * https://docs.bscscan.com/api-endpoints/contracts#verify-source-code
+   *
    * @param {VerifySourceCodeRequest} opts
    * @returns {Promise<VerifySourceCodeResponse>}
    * @memberof Contracts
@@ -71,6 +75,7 @@ class Contracts {
   /**
    * Verifying Proxy Contract
    * https://docs.bscscan.com/api-endpoints/contracts#verifying-proxy-contract-using-curl
+   *
    * @param {VerifyProxyContractRequest} opts
    * @returns {Promise<VerifyProxyContractResponse>}
    * @memberof Contracts
@@ -84,6 +89,7 @@ class Contracts {
   /**
    * Checking Proxy Contract Verification Submission Status
    * https://docs.bscscan.com/api-endpoints/contracts#checking-proxy-contract-verification-submission-status-using-curl
+   *
    * @param {CheckProxyVerificationRequest} opts
    * @returns {Promise<CheckProxyVerificationResponse>}
    * @memberof Contracts

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transactions should getTxReceiptStatus 1`] = `
+Object {
+  "status": "1",
+}
+`;
