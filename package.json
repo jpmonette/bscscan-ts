@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "rimraf lib/ && mkdir lib && tsc",
-    "test": "export NODE_ENV=test && npx jest --silent --passWithNoTests",
+    "test": "export NODE_ENV=test && npx jest --silent --passWithNoTests --coverage && coveralls < coverage/lcov.info",
     "test-travis": "yarn test"
   },
   "devDependencies": {
