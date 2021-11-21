@@ -1,6 +1,7 @@
 export * from "./accounts";
 export * from "./contracts";
 export * from "./stats";
+export * from "./transactions";
 
 /**
  * Options used to initialize a BscScan client

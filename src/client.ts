@@ -1,6 +1,7 @@
 import { Accounts } from "./modules/accounts";
 import { Contracts } from "./modules/contracts";
 import { Stats } from "./modules/stats";
+import { Transactions } from "./modules/transactions";
 import { APIResponse, BscScanOptions } from "./typings";
 
 const BASE_URL = "https://api.bscscan.com/api?";
@@ -9,18 +10,21 @@ class BscScan {
   apikey: string | undefined;
   baseUrl: string;
 
-  stats: Stats;
   accounts: Accounts;
   contracts: Contracts;
+  transactions: Transactions;
+  stats: Stats;
 
   constructor(opts: BscScanOptions) {
     const { apikey } = opts;
 
     this.apikey = apikey;
     this.baseUrl = opts.baseUrl || BASE_URL;
-    this.stats = new Stats(this);
+
     this.accounts = new Accounts(this);
     this.contracts = new Contracts(this);
+    this.stats = new Stats(this);
+    this.transactions = new Transactions(this);
   }
 
   newRequest(method = "GET", module: string, action: string, opts: Record<string, any> = {}): Request {
