@@ -1,4 +1,5 @@
 import { Accounts } from "./modules/accounts";
+import { Contracts } from "./modules/contracts";
 import { Stats } from "./modules/stats";
 import { APIResponse, BscScanOptions } from "./typings";
 
@@ -10,6 +11,7 @@ class BscScan {
 
   stats: Stats;
   accounts: Accounts;
+  contracts: Contracts;
 
   constructor(opts: BscScanOptions) {
     const { apikey } = opts;
@@ -18,9 +20,10 @@ class BscScan {
     this.baseUrl = opts.baseUrl || BASE_URL;
     this.stats = new Stats(this);
     this.accounts = new Accounts(this);
+    this.contracts = new Contracts(this);
   }
 
-  async query(module: string, action: string, opts: Record<string, any> = {}): Promise<any> {
+  newRequest(method = "GET", module: string, action: string, opts: Record<string, any> = {}): Request {
     const params = new URLSearchParams({ module, action });
 
     if (this.apikey) {
@@ -38,15 +41,19 @@ class BscScan {
     const headers: Headers = new Headers();
     headers.set("Content-Type", "application/json; charset=UTF-8");
 
-    const init: RequestInit = { method: "GET", headers };
+    const init: RequestInit = { method, headers };
 
     const url = new URL("/api?" + params.toString(), BASE_URL);
 
     const request = new Request(url.toString(), init);
-    return this.do(request);
+    return request;
   }
 
-  private async do<T>(request: Request): Promise<T> {
+  async query(module: string, action: string, opts: Record<string, any> = {}): Promise<any> {
+    return this.do(this.newRequest("GET", module, action, opts));
+  }
+
+  async do<T>(request: Request): Promise<T> {
     const response: Response = await fetch(request);
     const responseBody: APIResponse<T> = await response.json();
 
