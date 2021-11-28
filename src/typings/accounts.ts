@@ -33,7 +33,7 @@ export type GetTxListRequest = Pagination & {
   address: string;
 };
 
-export type GetTxListResponse = {
+export type GetTxListResponse = Array<{
   blockHash: string;
   blockNumber: string;
   confirmations: string;
@@ -52,11 +52,11 @@ export type GetTxListResponse = {
   transactionIndex: string;
   txreceipt_status: string;
   value: string;
-};
+}>;
 
 export type GetTxListInternalRequest = GetTxListRequest;
 
-export type GetTxListInternalResponse = {
+export type GetTxListInternalResponse = Array<{
   blockNumber: string;
   contractAddress: string;
   errCode: string;
@@ -71,7 +71,7 @@ export type GetTxListInternalResponse = {
   traceId: string;
   type: string;
   value: string;
-};
+}>;
 
 export type GetTokenTxRequest = GetTxListRequest & {
   contractaddress?: string;

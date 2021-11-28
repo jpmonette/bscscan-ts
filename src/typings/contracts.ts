@@ -65,7 +65,7 @@ export type VerifySourceCodeRequest = {
   libraryAddress10?: string;
 };
 
-export type VerifySourceCodeResponse = any;
+export type VerifySourceCodeResponse = string;
 
 export type VerifyProxyContractRequest = {
   address: string;
