@@ -1,11 +1,10 @@
 import "isomorphic-fetch";
 import { BscScan } from "../../client";
 import { server } from "../server";
-
-const apikey = process.env.API_KEY;
+import { API_KEY } from "../setup";
 
 describe("transactions", () => {
-  const client = new BscScan({ apikey });
+  const client = new BscScan({ apikey: API_KEY });
 
   beforeAll(() => server.listen());
   afterEach(() => server.resetHandlers());

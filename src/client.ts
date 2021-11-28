@@ -4,8 +4,16 @@ import { Stats } from "./modules/stats";
 import { Transactions } from "./modules/transactions";
 import { APIResponse, BscScanOptions } from "./typings";
 
+/**
+ * The default production API base url
+ */
 const BASE_URL = "https://api.bscscan.com/api?";
 
+/**
+ * A BscScan API client
+ *
+ * @class BscScan
+ */
 class BscScan {
   apikey: string | undefined;
   baseUrl: string;
@@ -15,6 +23,11 @@ class BscScan {
   transactions: Transactions;
   stats: Stats;
 
+  /**
+   * Creates an instance of BscScan.
+   * @param {BscScanOptions} opts
+   * @memberof BscScan
+   */
   constructor(opts: BscScanOptions) {
     const { apikey } = opts;
 
@@ -27,6 +40,16 @@ class BscScan {
     this.transactions = new Transactions(this);
   }
 
+  /**
+   * Creates a new HTTP request
+   *
+   * @param {string} [method="GET"]
+   * @param {string} module
+   * @param {string} action
+   * @param {Record<string, any>} [opts={}]
+   * @returns {Request}
+   * @memberof BscScan
+   */
   newRequest(method = "GET", module: string, action: string, opts: Record<string, any> = {}): Request {
     const params = new URLSearchParams({ module, action });
 
@@ -53,10 +76,27 @@ class BscScan {
     return request;
   }
 
+  /**
+   * Executes a simplified API query
+   *
+   * @param {string} module
+   * @param {string} action
+   * @param {Record<string, any>} [opts={}]
+   * @returns {Promise<any>}
+   * @memberof BscScan
+   */
   async query(module: string, action: string, opts: Record<string, any> = {}): Promise<any> {
     return this.do(this.newRequest("GET", module, action, opts));
   }
 
+  /**
+   * Executes an HTTP request
+   *
+   * @template T
+   * @param {Request} request
+   * @returns {Promise<T>}
+   * @memberof BscScan
+   */
   async do<T>(request: Request): Promise<T> {
     const response: Response = await fetch(request);
     const responseBody: APIResponse<T> = await response.json();

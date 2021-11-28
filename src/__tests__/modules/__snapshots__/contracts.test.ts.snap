@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contracts should checkProxyVerification 1`] = `"0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f"`;
+
+exports[`contracts should getAbi 1`] = `"[]"`;
+
+exports[`contracts should getSourceCode 1`] = `
+Array [
+  Object {
+    "ABI": "[]",
+    "CompilerVersion": "v0.6.12+commit.27d51765",
+    "ConstructorArguments": "",
+    "ContractName": "CakeToken",
+    "EVMVersion": "Default",
+    "Implementation": "",
+    "Library": "",
+    "LicenseType": "None",
+    "OptimizationUsed": "1",
+    "Proxy": "0",
+    "Runs": "5000",
+    "SourceCode": "pragma solidity 0.6.12;",
+    "SwarmSource": "ipfs://9755240809e31aec9fa5790314682233ca431b7c4f252d7e4bba347e2e742086",
+  },
+]
+`;
+
+exports[`contracts should verifyProxyContract 1`] = `"a7xygt433w43um5fda3m6d9jk62jwtjhqdr9zcwj9fmfzcj14r"`;
+
+exports[`contracts should verifySourceCode 1`] = `"a7xygt433w43um5fda3m6d9jk62jwtjhqdr9zcwj9fmfzcj14r"`;

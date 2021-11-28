@@ -1,13 +1,12 @@
 import "isomorphic-fetch";
 import { BscScan } from "../../client";
 import { server, testAddress1, testAddress2, testAddress3 } from "../server";
+import { API_KEY } from "../setup";
 
 const addresses = [testAddress1, testAddress2];
 
-const apikey = process.env.API_KEY;
-
 describe("account", () => {
-  const client = new BscScan({ apikey });
+  const client = new BscScan({ apikey: API_KEY });
 
   beforeAll(() => server.listen());
   afterEach(() => server.resetHandlers());
