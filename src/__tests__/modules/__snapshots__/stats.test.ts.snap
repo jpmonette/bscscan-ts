@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stats should getBNBLastPrice 1`] = `
+Object {
+  "ethbtc": "0.009928",
+  "ethbtc_timestamp": "1639590487",
+  "ethusd": "582.6",
+  "ethusd_timestamp": "1639590487",
+}
+`;
+
+exports[`stats should getBNBTotalSupply 1`] = `"22479013170398300000000000"`;
+
+exports[`stats should getValidators 1`] = `
+Array [
+  Object {
+    "validatorAddress": "0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88",
+    "validatorName": "",
+    "validatorStatus": "0",
+    "validatorVotingPower": "43379676392570",
+    "validatorVotingPowerProportion": "0.0617",
+  },
+  Object {
+    "validatorAddress": "0x2465176c461afb316ebc773c61faee85a6515daa",
+    "validatorName": "",
+    "validatorStatus": "0",
+    "validatorVotingPower": "38039845465042",
+    "validatorVotingPowerProportion": "0.0541",
+  },
+]
+`;
