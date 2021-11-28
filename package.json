@@ -1,6 +1,6 @@
 {
   "name": "@jpmonette/bscscan",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Explore the Binance Smart Chain using TypeScript and JavaScript",
   "homepage": "https://github.com/jpmonette/bscscan-ts",
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "rimraf lib/ && mkdir lib && tsc",
+    "prepublish": "yarn build",
     "test": "export NODE_ENV=test && npx jest --passWithNoTests",
     "test-travis": "export NODE_ENV=test && npx jest --silent --passWithNoTests --coverage"
   },
