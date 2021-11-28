@@ -1,12 +1,12 @@
 {
   "name": "@jpmonette/bscscan",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Explore the Binance Smart Chain using TypeScript and JavaScript",
   "homepage": "https://github.com/jpmonette/bscscan-ts",
   "author": "Jean-Philippe Monette <contact@jpmonette.net>",
   "license": "MIT",
   "main": "lib/client.js",
-  "types": "lib/typings/index.d.ts",
+  "types": "lib/client.d.ts",
   "bugs": {
     "url": "https://github.com/jpmonette/bscscan-ts/issues"
   },
