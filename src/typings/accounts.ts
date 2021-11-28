@@ -24,16 +24,20 @@ export type GetBalanceMultiRequest = {
   tag?: Tag;
 };
 
-export type GetBalanceMultiResponse = Array<{
+export type GetBalanceMultiResponse = Array<GetBalanceMultiResponseItem>;
+
+export type GetBalanceMultiResponseItem = {
   account: string;
   balance: string;
-}>;
+};
 
 export type GetTxListRequest = Pagination & {
   address: string;
 };
 
-export type GetTxListResponse = Array<{
+export type GetTxListResponse = Array<GetTxListResponseItem>;
+
+export type GetTxListResponseItem = {
   blockHash: string;
   blockNumber: string;
   confirmations: string;
@@ -52,11 +56,13 @@ export type GetTxListResponse = Array<{
   transactionIndex: string;
   txreceipt_status: string;
   value: string;
-}>;
+};
 
 export type GetTxListInternalRequest = GetTxListRequest;
 
-export type GetTxListInternalResponse = Array<{
+export type GetTxListInternalResponse = Array<GetTxListInternalResponseItem>;
+
+export type GetTxListInternalResponseItem = {
   blockNumber: string;
   contractAddress: string;
   errCode: string;
@@ -71,7 +77,7 @@ export type GetTxListInternalResponse = Array<{
   traceId: string;
   type: string;
   value: string;
-}>;
+};
 
 export type GetTokenTxRequest = GetTxListRequest & {
   contractaddress?: string;
@@ -90,8 +96,10 @@ export type GetMinedBlocksRequest = Pagination & {
   blocktype?: BlockType;
 };
 
-export type GetMinedBlocksResponse = Array<{
+export type GetMinedBlocksResponse = Array<GetMinedBlocksResponseItem>;
+
+export type GetMinedBlocksResponseItem = {
   blockNumber: string;
   timeStamp: string;
   blockReward: string;
-}>;
+};
