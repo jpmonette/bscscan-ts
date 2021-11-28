@@ -1,12 +1,14 @@
 export type GetBNBTotalSupplyResponse = string;
 
-export type GetValidatorsResponse = Array<{
+export type GetValidatorsResponse = Array<GetValidatorsResponseItem>;
+
+export type GetValidatorsResponseItem = {
   validatorAddress: string;
   validatorName: string;
   validatorStatus: string;
   validatorVotingPower: string;
   validatorVotingPowerProportion: string;
-}>;
+};
 
 export type GetBNBLastPriceResponse = {
   ethbtc: string;

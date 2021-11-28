@@ -10,7 +10,9 @@ export type GetSourceCodeRequest = {
   address: string;
 };
 
-export type GetSourceCodeResponse = Array<{
+export type GetSourceCodeResponse = Array<GetSourceCodeResponseItem>;
+
+export type GetSourceCodeResponseItem = {
   SourceCode: string;
   ABI: string;
   ContractName: string;
@@ -24,7 +26,7 @@ export type GetSourceCodeResponse = Array<{
   Proxy: string;
   Implementation: string;
   SwarmSource: string;
-}>;
+};
 
 export type VerifySourceCodeRequest = {
   contractAddress: string;
