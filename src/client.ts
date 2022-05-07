@@ -70,7 +70,7 @@ class BscScan {
 
     const init: RequestInit = { method, headers };
 
-    const url = new URL("/api?" + params.toString(), baseUrl);
+    const url = new URL("/api?" + params.toString(), this.baseUrl);
 
     const request = new Request(url.toString(), init);
     return request;
