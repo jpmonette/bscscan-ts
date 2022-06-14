@@ -31,6 +31,13 @@ export type GetBalanceMultiResponseItem = {
   balance: string;
 };
 
+export type GetBalanceHistoryRequest = {
+  address: string;
+  blockno: string;
+};
+
+export type GetBalanceHistoryResponse = string;
+
 export type GetTxListRequest = Pagination & {
   address: string;
 };
