@@ -14,6 +14,8 @@ import {
   GetTxListResponse,
   GetMinedBlocksRequest,
   GetMinedBlocksResponse,
+  GetBalanceHistoryResponse,
+  GetBalanceHistoryRequest,
 } from "../typings/accounts";
 
 class Accounts {
@@ -60,6 +62,12 @@ class Accounts {
     return this.do("balancemulti", opts);
   }
 
+  /**
+   *
+   */
+  async getBalanceHistory(opts: GetBalanceHistoryRequest): Promise<GetBalanceHistoryResponse> {
+    return this.do("balancehistory", opts);
+  }
   /**
    * Get a list of 'Normal' Transactions By Address
    * https://docs.bscscan.com/api-endpoints/accounts#get-a-list-of-normal-transactions-by-address
@@ -127,8 +135,6 @@ class Accounts {
   private async do(action: string, opts: Record<string, any>): Promise<any> {
     return this.client.query("account", action, opts);
   }
-
-  // todo: balancehistory
 }
 
 export { Accounts };
